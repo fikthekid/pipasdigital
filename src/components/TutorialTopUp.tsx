@@ -1,4 +1,10 @@
 import { GuideStep } from './GuideStep'
+// Ensure the image file exists or update the path accordingly
+import img1 from '../assets/2.1.jpg'
+import img2 from '../assets/2.2.jpg'
+import img3 from '../assets/2.3.jpg'
+import img4 from '../assets/2.4.jpg'
+import img5 from '../assets/2.5.jpg'
 
 interface TutorialTopUpProps {
   onBack: () => void
@@ -10,35 +16,35 @@ export function TutorialTopUp({ onBack }: TutorialTopUpProps) {
       stepNumber: 1,
       title: "Pilih Menu Top Up",
       description: "Pada tampilan menu utama, klik tombol 'Top Up' untuk memulai proses pengisian saldo.",
-      imageSrc: "https://images.unsplash.com/photo-1694878981815-d643689e51fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjBtb2NrdXB8ZW58MXx8fHwxNzU4NzIyNzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: img1,
       imageAlt: "Screenshot menu utama top up"
     },
     {
       stepNumber: 2,
       title: "Masukkan Nominal Top Up",
       description: "Masukkan nominal top up yang diinginkan sesuai dengan kebutuhan Anda.",
-      imageSrc: "https://images.unsplash.com/photo-1513594964634-381b22a9e135?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydHBob25lJTIwbG9naW4lMjBzY3JlZW58ZW58MXx8fHwxNzU4Nzk0NTMwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: img2,
       imageAlt: "Screenshot input nominal"
     },
     {
       stepNumber: 3,
       title: "Pilih Layanan Tiket Deposit",
       description: "Pilih layanan tiket deposit sebagai metode pembayaran untuk top up saldo Anda.",
-      imageSrc: "https://images.unsplash.com/photo-1681826291722-70bd7e9e6fc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBiYW5raW5nJTIwYXBwfGVufDF8fHx8MTc1ODcxMTk0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: img3,
       imageAlt: "Screenshot pilihan metode pembayaran"
     },
     {
       stepNumber: 4,
       title: "Transfer ke Rekening",
       description: "Transfer sesuai nominal yang Anda pilih ke salah satu rekening berikut:",
-      imageSrc: "https://images.unsplash.com/photo-1641567535859-c58187ac4954?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaG9uZSUyMGFwcCUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NTg3OTQ1MzB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: img4,
       imageAlt: "Screenshot informasi rekening"
     },
     {
       stepNumber: 5,
       title: "Selesai",
       description: "Tunggu selama 5-15 menit untuk proses verifikasi pembayaran. Saldo akan otomatis bertambah setelah pembayaran dikonfirmasi.",
-      imageSrc: "https://images.unsplash.com/photo-1694878981815-d643689e51fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjBtb2NrdXB8ZW58MXx8fHwxNzU4NzIyNzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: img5,
       imageAlt: "Screenshot konfirmasi top up"
     }
   ]
@@ -48,7 +54,7 @@ export function TutorialTopUp({ onBack }: TutorialTopUpProps) {
       {/* Header */}
       <div className="bg-gradient-to-r from-green-600 to-green-700 text-white py-8">
         <div className="max-w-6xl mx-auto px-4">
-          <button 
+          <button
             onClick={onBack}
             className="flex items-center text-green-100 hover:text-white mb-4 transition-colors"
           >

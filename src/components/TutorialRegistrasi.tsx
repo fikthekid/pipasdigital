@@ -1,4 +1,9 @@
 import { GuideStep } from './GuideStep'
+import regis1 from '../assets/1.1.jpg'
+import regis2 from '../assets/1.2.jpg'
+import regis3 from '../assets/1.3.jpg'
+import regis4 from '../assets/1.4.jpg'
+import regis5 from '../assets/1.5.jpg'
 
 interface TutorialRegistrasiProps {
   onBack: () => void
@@ -10,35 +15,35 @@ export function TutorialRegistrasi({ onBack }: TutorialRegistrasiProps) {
       stepNumber: 1,
       title: "Buka Aplikasi Pipas Digital",
       description: "Buka aplikasi Pipas Digital kemudian klik tombol 'Daftar' untuk memulai proses registrasi.",
-      imageSrc: "https://images.unsplash.com/photo-1694878981815-d643689e51fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjBtb2NrdXB8ZW58MXx8fHwxNzU4NzIyNzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: regis1,
       imageAlt: "Screenshot halaman awal aplikasi"
     },
     {
       stepNumber: 2,
       title: "Masukkan Nomor HP",
       description: "Masukkan nomor HP yang aktif, kemudian klik tombol 'Berikutnya' untuk melanjutkan proses registrasi.",
-      imageSrc: "https://images.unsplash.com/photo-1513594964634-381b22a9e135?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydHBob25lJTIwbG9naW4lMjBzY3JlZW58ZW58MXx8fHwxNzU4Nzk0NTMwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: regis2,
       imageAlt: "Screenshot input nomor HP"
     },
     {
       stepNumber: 3,
       title: "Masukkan Kode OTP",
       description: "Masukkan kode OTP yang telah kami kirimkan melalui aplikasi WhatsApp ke nomor HP yang Anda daftarkan.",
-      imageSrc: "https://images.unsplash.com/photo-1681826291722-70bd7e9e6fc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBiYW5raW5nJTIwYXBwfGVufDF8fHx8MTc1ODcxMTk0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: regis3,
       imageAlt: "Screenshot verifikasi OTP"
     },
     {
       stepNumber: 4,
       title: "Isi Formulir Data Diri",
       description: "Lengkapi formulir yang sudah tertera dengan data diri yang valid dan sesuai dengan dokumen resmi Anda.",
-      imageSrc: "https://images.unsplash.com/photo-1641567535859-c58187ac4954?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaG9uZSUyMGFwcCUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NTg3OTQ1MzB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: regis4,
       imageAlt: "Screenshot formulir data diri"
     },
     {
       stepNumber: 5,
       title: "Buat Kata Sandi dan PIN",
       description: "Buat kata sandi dan PIN transaksi untuk keamanan akun Anda. Contoh kata sandi: Pipas#digital2025",
-      imageSrc: "https://images.unsplash.com/photo-1694878981815-d643689e51fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjBtb2NrdXB8ZW58MXx8fHwxNzU4NzIyNzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: regis5,
       imageAlt: "Screenshot pembuatan kata sandi dan PIN"
     }
   ]
@@ -48,7 +53,7 @@ export function TutorialRegistrasi({ onBack }: TutorialRegistrasiProps) {
       {/* Header */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-8">
         <div className="max-w-6xl mx-auto px-4">
-          <button 
+          <button
             onClick={onBack}
             className="flex items-center text-blue-100 hover:text-white mb-4 transition-colors"
           >

@@ -1,4 +1,11 @@
 import { GuideStep } from './GuideStep'
+import aktivasi1 from '../assets/3.1.jpg'
+import aktivasi2 from '../assets/3.2.jpg'
+import aktivasi3 from '../assets/3.3.jpg'
+import aktivasi4 from '../assets/3.4.jpg'
+import aktivasi5 from '../assets/3.5.jpg'
+import aktivasi6 from '../assets/3.6.jpg'
+import aktivasi7 from '../assets/3.7.jpg'
 
 interface TutorialAktivasiProps {
   onBack: () => void
@@ -10,49 +17,49 @@ export function TutorialAktivasi({ onBack }: TutorialAktivasiProps) {
       stepNumber: 1,
       title: "Pilih Menu Aktivasi",
       description: "Pada menu utama pilih 'Aktivasi' pada menu pembelian, kemudian pilih 'Aktivasi Massal'.",
-      imageSrc: "https://images.unsplash.com/photo-1694878981815-d643689e51fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjBtb2NrdXB8ZW58MXx8fHwxNzU4NzIyNzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: aktivasi1,
       imageAlt: "Screenshot menu aktivasi"
     },
     {
       stepNumber: 2,
       title: "Pilih Operator",
       description: "Pilih aktivasi yang Anda inginkan: Aktivasi voucher massal XL, Axis, Indosat, Tri, atau Telkomsel.",
-      imageSrc: "https://images.unsplash.com/photo-1513594964634-381b22a9e135?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydHBob25lJTIwbG9naW4lMjBzY3JlZW58ZW58MXx8fHwxNzU4Nzk0NTMwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: aktivasi2,
       imageAlt: "Screenshot pilihan operator"
     },
     {
       stepNumber: 3,
       title: "Masukkan Kode Voucher",
       description: "Masukkan kode voucher awal dan kode voucher akhir, lalu tekan tombol operator untuk melanjutkan.",
-      imageSrc: "https://images.unsplash.com/photo-1681826291722-70bd7e9e6fc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBiYW5raW5nJTIwYXBwfGVufDF8fHx8MTc1ODcxMTk0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: aktivasi3,
       imageAlt: "Screenshot input kode voucher"
     },
     {
       stepNumber: 4,
       title: "Pilih Voucher",
       description: "Pilih voucher yang diinginkan dari daftar yang tersedia sesuai dengan operator yang telah dipilih.",
-      imageSrc: "https://images.unsplash.com/photo-1641567535859-c58187ac4954?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaG9uZSUyMGFwcCUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NTg3OTQ1MzB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: aktivasi4,
       imageAlt: "Screenshot pilihan voucher"
     },
     {
       stepNumber: 5,
       title: "Konfirmasi Pembayaran",
       description: "Jika sudah sesuai, tinggal tekan tombol 'Bayar' untuk melanjutkan ke proses pembayaran.",
-      imageSrc: "https://images.unsplash.com/photo-1694878981815-d643689e51fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjBtb2NrdXB8ZW58MXx8fHwxNzU4NzIyNzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: aktivasi5,
       imageAlt: "Screenshot konfirmasi pembayaran"
     },
     {
       stepNumber: 6,
       title: "Masukkan PIN",
       description: "Masukkan PIN transaksi Anda untuk mengkonfirmasi pembayaran dan melanjutkan proses aktivasi.",
-      imageSrc: "https://images.unsplash.com/photo-1513594964634-381b22a9e135?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydHBob25lJTIwbG9naW4lMjBzY3JlZW58ZW58MXx8fHwxNzU4Nzk0NTMwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: aktivasi6,
       imageAlt: "Screenshot input PIN"
     },
     {
       stepNumber: 7,
       title: "Cek History",
       description: "Kembali ke menu utama, pilih menu 'History' lalu tunggu hingga proses selesai. Jika tampilan sudah sukses, maka voucher siap digunakan.",
-      imageSrc: "https://images.unsplash.com/photo-1681826291722-70bd7e9e6fc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBiYW5raW5nJTIwYXBwfGVufDF8fHx8MTc1ODcxMTk0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: aktivasi7,
       imageAlt: "Screenshot history transaksi"
     }
   ]
@@ -70,7 +77,7 @@ export function TutorialAktivasi({ onBack }: TutorialAktivasiProps) {
       {/* Header */}
       <div className="bg-gradient-to-r from-purple-600 to-purple-700 text-white py-8">
         <div className="max-w-6xl mx-auto px-4">
-          <button 
+          <button
             onClick={onBack}
             className="flex items-center text-purple-100 hover:text-white mb-4 transition-colors"
           >

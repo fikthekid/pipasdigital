@@ -1,4 +1,7 @@
 import { GuideStep } from './GuideStep'
+import simpanPin1 from '../assets/bukpro.jpg'
+import simpanPin2 from '../assets/4.2.jpg'
+import simpanPin3 from '../assets/4.1.jpg'
 
 interface SubTutorialSimpanPinProps {
   onBack: () => void
@@ -10,21 +13,21 @@ export function SubTutorialSimpanPin({ onBack }: SubTutorialSimpanPinProps) {
       stepNumber: 1,
       title: "Buka Profile",
       description: "Buka halaman profile Anda dengan menekan ikon profil di menu bawah aplikasi.",
-      imageSrc: "https://images.unsplash.com/photo-1694878981815-d643689e51fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjBtb2NrdXB8ZW58MXx8fHwxNzU4NzIyNzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: simpanPin1,
       imageAlt: "Screenshot menu profile"
     },
     {
       stepNumber: 2,
       title: "Pilih Simpan PIN",
       description: "Pada halaman profile, temukan dan pilih menu 'Simpan PIN' untuk melanjutkan proses.",
-      imageSrc: "https://images.unsplash.com/photo-1513594964634-381b22a9e135?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydHBob25lJTIwbG9naW4lMjBzY3JlZW58ZW58MXx8fHwxNzU4Nzk0NTMwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: simpanPin2,
       imageAlt: "Screenshot menu simpan PIN"
     },
     {
       stepNumber: 3,
       title: "Masukkan PIN Baru",
       description: "Masukkan PIN yang Anda inginkan. Pastikan PIN mudah diingat namun sulit ditebak orang lain.",
-      imageSrc: "https://images.unsplash.com/photo-1681826291722-70bd7e9e6fc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBiYW5raW5nJTIwYXBwfGVufDF8fHx8MTc1ODcxMTk0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: simpanPin3,
       imageAlt: "Screenshot input PIN baru"
     }
   ]
@@ -34,7 +37,7 @@ export function SubTutorialSimpanPin({ onBack }: SubTutorialSimpanPinProps) {
       {/* Header */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-8">
         <div className="max-w-6xl mx-auto px-4">
-          <button 
+          <button
             onClick={onBack}
             className="flex items-center text-blue-100 hover:text-white mb-4 transition-colors"
           >

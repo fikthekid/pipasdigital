@@ -1,4 +1,9 @@
 import { GuideStep } from './GuideStep'
+import gantiPassword1 from '../assets/5.1.jpg'
+import gantiPassword2 from '../assets/gantipw.jpg'
+import gantiPassword3 from '../assets/5.2.jpg'
+import gantiPassword6 from '../assets/bukpro.jpg'
+import gantiPassword4 from '../assets/5.3.jpg'
 
 interface SubTutorialGantiPasswordProps {
   onBack: () => void
@@ -10,42 +15,35 @@ export function SubTutorialGantiPassword({ onBack }: SubTutorialGantiPasswordPro
       stepNumber: 1,
       title: "Buka Profile",
       description: "Buka halaman profile Anda dengan menekan ikon profil di menu bawah aplikasi.",
-      imageSrc: "https://images.unsplash.com/photo-1694878981815-d643689e51fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjBtb2NrdXB8ZW58MXx8fHwxNzU4NzIyNzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: gantiPassword6,
       imageAlt: "Screenshot menu profile"
     },
     {
       stepNumber: 2,
       title: "Pilih Pengaturan Akun",
       description: "Pada halaman profile, pilih menu 'Pengaturan Akun' untuk mengakses pengaturan keamanan.",
-      imageSrc: "https://images.unsplash.com/photo-1513594964634-381b22a9e135?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydHBob25lJTIwbG9naW4lMjBzY3JlZW58ZW58MXx8fHwxNzU4Nzk0NTMwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: gantiPassword1,
       imageAlt: "Screenshot pengaturan akun"
     },
     {
       stepNumber: 3,
       title: "Pilih Ganti Password",
       description: "Di halaman pengaturan akun, pilih opsi 'Ganti Password' untuk mengubah kata sandi Anda.",
-      imageSrc: "https://images.unsplash.com/photo-1681826291722-70bd7e9e6fc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBiYW5raW5nJTIwYXBwfGVufDF8fHx8MTc1ODcxMTk0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: gantiPassword2,
       imageAlt: "Screenshot menu ganti password"
     },
     {
       stepNumber: 4,
-      title: "Masukkan Password Lama",
-      description: "Masukkan password lama Anda untuk verifikasi identitas sebelum mengubah ke password baru.",
-      imageSrc: "https://images.unsplash.com/photo-1641567535859-c58187ac4954?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaG9uZSUyMGFwcCUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NTg3OTQ1MzB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      title: "Masukkan Password Lama dan Masukkan Password Baru",
+      description: "Masukkan password lama Anda untuk verifikasi identitas sebelum mengubah ke password baru. dan Masukkan password baru Anda. Pastikan password kuat dengan kombinasi huruf, angka, dan simbol.",
+      imageSrc: gantiPassword3,
       imageAlt: "Screenshot input password lama"
     },
     {
       stepNumber: 5,
-      title: "Masukkan Password Baru",
-      description: "Masukkan password baru Anda. Pastikan password kuat dengan kombinasi huruf, angka, dan simbol.",
-      imageSrc: "https://images.unsplash.com/photo-1694878981815-d643689e51fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjBtb2NrdXB8ZW58MXx8fHwxNzU4NzIyNzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      imageAlt: "Screenshot input password baru"
-    },
-    {
-      stepNumber: 6,
       title: "Konfirmasi Perubahan",
       description: "Klik tombol 'Ganti' untuk mengkonfirmasi perubahan password. Password baru Anda akan langsung aktif.",
-      imageSrc: "https://images.unsplash.com/photo-1513594964634-381b22a9e135?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydHBob25lJTIwbG9naW4lMjBzY3JlZW58ZW58MXx8fHwxNzU4Nzk0NTMwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: gantiPassword4,
       imageAlt: "Screenshot konfirmasi ganti password"
     }
   ]
@@ -55,7 +53,7 @@ export function SubTutorialGantiPassword({ onBack }: SubTutorialGantiPasswordPro
       {/* Header */}
       <div className="bg-gradient-to-r from-green-600 to-green-700 text-white py-8">
         <div className="max-w-6xl mx-auto px-4">
-          <button 
+          <button
             onClick={onBack}
             className="flex items-center text-green-100 hover:text-white mb-4 transition-colors"
           >
@@ -69,7 +67,7 @@ export function SubTutorialGantiPassword({ onBack }: SubTutorialGantiPasswordPro
               Tutorial Ganti Kata Sandi
             </h1>
             <p className="text-xl text-green-100 max-w-2xl mx-auto">
-              Ikuti 6 langkah mudah untuk mengubah kata sandi Anda
+              Ikuti 5 langkah mudah untuk mengubah kata sandi Anda
             </p>
           </div>
         </div>

@@ -65,12 +65,6 @@ export function MainMenu({ onSelectTutorial }: MainMenuProps) {
             </div>
             <p className="text-sm text-gray-600">Menu Utama</p>
           </div>
-          <div className="text-center">
-            <div className="w-48 h-auto mx-auto mb-4 rounded-2xl overflow-hidden shadow-lg">
-              <img src={profileScreen} alt="Profile Pipas Digital" className="w-full h-auto" />
-            </div>
-            <p className="text-sm text-gray-600">Profile</p>
-          </div>
         </div>
 
         {/* Tutorial Menu */}
@@ -113,7 +107,7 @@ export function MainMenu({ onSelectTutorial }: MainMenuProps) {
           <p className="text-gray-600 mb-4">
             Tim customer service kami siap membantu Anda 24/7
           </p>
-          <button 
+          <button
             onClick={() => onSelectTutorial('customer-service')}
             className="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition-colors"
           >
